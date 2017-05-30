@@ -50,8 +50,8 @@
         // var is_in_tree = false;
         // var crying = true;
         
-
-        if (typeof(score) != "number") {
+//determines starting score and changes do to variables of the players
+        if (typeof(score) !== "number") {
             score = 500;
         }
         if (crying){
@@ -59,22 +59,22 @@
         }else {
             score += 50;
         }
-        if(last_play = "Q"){
+        if(last_play === "Q"){
             score -=77;
         }
         if (is_in_tree && last_play == typeof("string")){
             score += 395;
         }
-        if(broom = "handle"){
-            score = score + score 
+        if(broom === "handle"){
+            score = score + score ;
         }else {
-            score = score - score
+            score = score - score;
         }
         if(has_ball && !is_in_tree && !crying){
             score = score *1.5;
         }
-        if (last_play == typeof("number")){
-            score = score *last_play
+        if (typeOf(last_play) !== "string"){
+            score = score *last_play;
         }
         console.log(score);
 

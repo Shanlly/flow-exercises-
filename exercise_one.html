@@ -12,18 +12,19 @@
             
             TODO: This script doesn't work properly for the temperature "70". Fix it so that it works well for all temperatures.
         */
-    
+// prompts the user for the temperature
         var input_num = prompt("What's the temperature?");
-        
-        if (input_num < 30) {
+//  gives them feed back based on reply         
+        if (input_num <= 30) {
             console.log("It's really cold.");
-        }else if (input_num < 50) {
+        }else if ( input_num > 31 && input_num <= 50) {
             console.log("It's pretty chilly.");
-        }else if (input_num < 70) {
+        }else if (input_num > 51 && input_num <= 79 ) {
             console.log("It's warm.");
-        }else if (input_num > 80) {
-            console.log("It's hot!")
+        }else if (input_num >= 80) {
+            console.log("It's hot!");
         }
+  
     
     </script>
 </body>

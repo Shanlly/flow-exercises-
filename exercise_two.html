@@ -23,13 +23,13 @@
         
         if (hourOfDay < 6) {
             body.style.backgroundColor = "darkblue";
-        } else if (hourOfDay < 12) {
+        } else if (hourOfDay >6 && hourOfDay < 12 ) {
             body.style.backgroundColor = "lightblue";
-        }else if  (hourOfDay < 17) {
+        }else if  (hourOfDay >12 && hourOfDay < 17 ) {
             body.style.backgroundColor = "mediumvioletred";
-        }else if  (hourOfDay) {
+        }else if  (hourOfDay >17 && hourOfDay < 20 ) {
             body.style.backgroundColor = "red";
-        }else 
+        }else if  (hourOfDay >20 && hourOfDay < 24 ) 
             body.style.backgroundColor = "yellow";
         
     </script>
