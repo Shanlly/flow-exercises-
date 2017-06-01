@@ -62,7 +62,7 @@
         if(last_play === "Q"){
             score -=77;
         }
-        if (is_in_tree && last_play == typeof("string")){
+        if(is_in_tree && typeof(last_play) === "string"){
             score += 395;
         }
         if(broom === "handle"){
@@ -75,7 +75,7 @@
         if(has_ball && !is_in_tree && !crying){
             score = score *1.5;
         }
-        if (typeof last_play !== "string"){
+        if (typeof(last_play) !== "string"){
             score = score *last_play;
         }
         console.log(score);
